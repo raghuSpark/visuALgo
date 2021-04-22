@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visualgo</title>
+        <script src="https://kit.fontawesome.com/0449b573f1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="mainComponents/css/style.css">
+        <link rel="shortcut icon" href="mainComponents/images & svgs/logo.svg" type="image/x-icon">
+    </head>
+
+    <body>
+        <div id="navBarDivId">
+            <nav class="navbar">
+                <!-- <img src="mainComponents/images & svgs/logo.svg" alt="logo"> -->
+                <div class="logo" id="titleId" onclick="window.location.reload();"><img
+                        src="mainComponents/images & svgs/logo.svg" alt="logo">visuALgo</div>
+                <ul class="navbar-nav">
+                    <li class="infoBtn"><span class="fas fa-info-circle"></span></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Algorithms<span class="fas fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="AlgoButtonDijkstra"><a href="#">Dijkstra's Algorithm</a></li>
+                            <li id="AlgoButtonBFS"><a href="#">Breadth-first Search</a></li>
+                            <li id="AlgoButtonDFS"><a href="#">Depth-first Search</a></li>
+                            <!-- <li id="AlgoButtonA*"><a href="#">A* Search</a></li> -->
+                        </ul>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Standard Mazes<span class="fas fa-caret-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="MazeButtonRandom"><a href="#">Random Maze</a></li>
+                            <li id="MazeButton2"><a href="#">Maze 2</a></li>
+                            <li id="MazeButton3"><a href="#">Maze 3</a></li>
+                            <li id="MazeButton4"><a href="#">Maze 4</a></li>
+                        </ul>
+                    </li> -->
+                    <li id="ButtonClearPath"><a href="#">Clear Path</a></li>
+                    <li id="ButtonClearGrids"><a href="#">Clear Grids</a></li>
+                    <li id="ButtonShow"><button class="btn" id="visualizeButton">Visualize</button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- <div class="tutorial_container">
+            <div class="tutorial">
+                <h1>Welcome to visuALgo!</h1>
+                <h5>This short tutorial is just to familiarize you with all of the features of this application.</h5>
+                <p>If you want to dive right in, feel free to press the "Skip Tutorial" button below. Otherwise, press
+                    "Next"!</p>
+                <div id="tutorialCounter">1/9</div>
+                <img id="previousButton" src="mainComponents/images & svgs/previousArrow.svg">
+                <img id="skipButton" src="mainComponents/images & svgs/skipIcon.svg">
+                <img id="nextButton" src="mainComponents/images & svgs/nextArrow.svg">
+            </div>
+        </div> -->
+
+        <div id='mainGrid'>
+            <div id="aboutChoosenAlgo"><b>DIJKSTRA'S ALGORITHM (Weighted Algo)</b> ->
+                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e22162be85d06b346f3b7f7aad9746da0c1019c9"
+                    aria-hidden="true" style="vertical-align: -0.838ex; width:19.435ex; height:2.843ex;"
+                    alt="{\displaystyle \Theta (|E|+|V|\log |V|)}">
+            </div>
+            <table id="grids" />
+        </div>
+        <audio src="mainComponents/voices/61973582.mp3" id="audio"></audio>
+    </body>
+    <script src="mainComponents/js/grids.js"></script>
+
+</html>

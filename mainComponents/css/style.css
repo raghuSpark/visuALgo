@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    /* background: #f2f2f2; */
+    background: white;
+}
+
+nav {
+    background: #2f275c;
+}
+
+nav:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#navBarId {
+    height: auto;
+}
+
+nav .logo {
+    cursor: pointer;
+    float: left;
+    color: gold;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 60px;
+}
+
+nav ul {
+    /* border: 1px solid gold; */
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li {
+    /* border: 1px solid greenyellow; */
+    float: left;
+    display: block;
+    /* background: #736c92; */
+    background: #2f275c;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li button {
+    cursor: pointer;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 14px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li button:hover {
+    margin-top: 12px;
+    background-color: #f7d06c;
+}
+
+nav ul li span {
+    cursor: pointer;
+    margin-top: 17px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+nav ul ul li a:hover {
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+}
+
+nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+.fa-caret-down {
+    margin-left: 10px;
+}
+
+.fa-info-circle {
+    color: gold;
+}
+
+#aboutChoosenAlgo {
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+}
+
+button {
+    outline: none;
+}
+
+div img {
+    width: 2ex;
+    margin-right: 10px;
+}
+
+/* TUTORIAL */
+
+.tutorial_container {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.tutorial {
+    position: absolute;
+    background-color: #e7e4fc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px 20px;
+    width: 50%;
+    height: 60%;
+    max-width: 100%;
+    text-align: center;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.tutorial button {
+    background-color: seagreen;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(184, 134, 134, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+.tutorial #tutorialCounter {
+    box-sizing: border-box;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    right: 5%;
+    top: 8%;
+}
+
+div {
+    display: block;
+}
+
+.tutorial h1 {
+    color: #2f275c;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.tutorial h5 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.tutorial p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.tutorial #logo {
+    margin-top: 30px;
+    width: 15ex;
+}
+
+.tutorial #previousButton {
+    cursor: pointer;
+    width: 5ex;
+    position: absolute;
+    left: 4%;
+    bottom: 4%;
+}
+
+.tutorial #skipButton {
+    cursor: pointer;
+    width: 5ex;
+    position: absolute;
+    left: 48%;
+    bottom: 4%;
+}
+
+.tutorial #nextButton {
+    cursor: pointer;
+    width: 5ex;
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+}
+
+/* GRIDS */
+
+table {
+    border-spacing: 0;
+}
+
+#grids {
+    border-collapse: collapse;
+}
+
+td {
+    height: 25px;
+    width: 25px;
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+.start {
+    border: 1px solid gray;
+    background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/startIcon.svg);
+    /* background-color: green; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.finish {
+    border: 1px solid gray;
+    background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/finishIcon.svg);
+    /* background-color: red; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.unvisited {
+    /* border: 1px solid rgb(175, 216, 248); */
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.weighted {
+    border: 1px solid green;
+    background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/treeIcon.svg);
+    /* border: 5px solid pink; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.visited {
+    border: 1px solid white;
+    background-color: rgb(114, 173, 250);
+}
+
+.wall {
+    background-color: #2f275c;
+}
+
+.shortestPath {
+    /* background-color: rgb(255, 165, 149); */
+    border: 1px solid gray;
+    background-color: rgb(255, 227, 68);
+}
