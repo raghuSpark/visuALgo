@@ -269,7 +269,7 @@ th {
 .start {
     border: 1px solid gray;
     background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/startIcon.svg);
-    /* background-color: green; */
+    background-color: green;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -278,7 +278,7 @@ th {
 .finish {
     border: 1px solid gray;
     background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/finishIcon.svg);
-    /* background-color: red; */
+    background-color: red;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -293,7 +293,7 @@ th {
 .weighted {
     border: 1px solid green;
     background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/treeIcon.svg);
-    /* border: 5px solid pink; */
+    border: 5px solid pink;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
