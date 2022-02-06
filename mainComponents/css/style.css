@@ -266,24 +266,6 @@ th {
     padding: 0;
 }
 
-.start {
-    border: 1px solid gray;
-    background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/startIcon.svg);
-    background-color: green;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.finish {
-    border: 1px solid gray;
-    background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/finishIcon.svg);
-    background-color: red;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .unvisited {
     /* border: 1px solid rgb(175, 216, 248); */
     border: 1px solid gray;
@@ -292,8 +274,9 @@ th {
 
 .weighted {
     border: 1px solid green;
-    background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/treeIcon.svg);
-    border: 5px solid pink;
+/*     background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/treeIcon.svg); */
+    background-image: url(https://raw.githubusercontent.com/raghuSpark/visuALgo/3ffe22bb085c1e045a6e43c8187ef5de48fa0407/mainComponents/images%20%26%20svgs/treeIcon.svg);
+/*     border: 5px solid pink; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -312,4 +295,24 @@ th {
     /* background-color: rgb(255, 165, 149); */
     border: 1px solid gray;
     background-color: rgb(255, 227, 68);
+}
+
+.start {
+    border: 1px solid gray;
+/*     background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/startIcon.svg); */
+    background-image: url(https://raw.githubusercontent.com/raghuSpark/visuALgo/3ffe22bb085c1e045a6e43c8187ef5de48fa0407/mainComponents/images%20%26%20svgs/startIcon.svg);
+/*     background-color: green; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.finish {
+    border: 1px solid gray;
+/*     background-image: url(/z-projects/Visualgo/mainComponents/images\ &\ svgs/finishIcon.svg); */
+    background-image: url(https://raw.githubusercontent.com/raghuSpark/visuALgo/3ffe22bb085c1e045a6e43c8187ef5de48fa0407/mainComponents/images%20%26%20svgs/finishIcon.svg);
+/*     background-color: red; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
