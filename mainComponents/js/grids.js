@@ -471,7 +471,8 @@ let newGrids = new Grids(height, width)
 newGrids.initialise();
 
 window.onkeydown = (e) => {
-    newGrids.ctrlActivated = e.ctrlKey;
+//     newGrids.ctrlActivated = e.ctrlKey;
+    newGrids.ctrlActivated = true;
 }
 
 window.onkeyup = (e) => {
